@@ -5,17 +5,17 @@
         public string Position { get; set; }
         public string Chair { get; set; }
         public string UniversityName { get; set; }
-        public Teacher(string firstname, string lastname, DateTime birthDate, 
+        public Teacher(string firstName, string lastName, DateTime birthDate, 
             string position, string chair, string universityName) : 
-            base(firstname, lastname, birthDate)
+            base(firstName, lastName, birthDate)
         {
             Position = position;
             Chair = chair;
             UniversityName = universityName;
         }
-        public Teacher(string firstname, string lastname, DateTime birthDate, 
+        public Teacher(string firstName, string lastName, DateTime birthDate, 
             string position, string chair) : 
-            base(firstname, lastname, birthDate)
+            base(firstName, lastName, birthDate)
         {
             Position = position;
             Chair = chair;
