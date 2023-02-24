@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP2", "OOP2\OOP2.csproj", "{AD8AAA7E-9710-4D45-B09D-9ECBCD43449F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanaCSharp06.ConsoleApp", "SanaCSharp06.ConsoleApp\SanaCSharp06.ConsoleApp.csproj", "{AD8AAA7E-9710-4D45-B09D-9ECBCD43449F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanaCSharp06ClassLibrary", "SanaCSharp06ClassLibrary\SanaCSharp06ClassLibrary.csproj", "{301BE831-C663-477B-A5E6-7695230928FC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanaCSharp06.ClassLibrary", "SanaCSharp06.ClassLibrary\SanaCSharp06.ClassLibrary.csproj", "{301BE831-C663-477B-A5E6-7695230928FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
