@@ -29,8 +29,8 @@
             else
             {
                 string information = $"Ім'я: {FirstName};" +
-                $"\nПрізвище: {LastName};" +
-                $"\nДата народження: {BirthDate.Day}.{BirthDate.Month}.{BirthDate.Year};";
+                    $"\nПрізвище: {LastName};" +
+                    $"\nДата народження: {BirthDate.Day}.{BirthDate.Month}.{BirthDate.Year};";
                 Console.WriteLine(information);
             }
         }

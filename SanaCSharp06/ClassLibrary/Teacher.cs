@@ -26,7 +26,7 @@
             base.ShowInfo();
             string information = $"Посада: {Position};" +
                 $"\nКафедра: {Chair};" +
-            $"\nВищий навчальний заклад: {UniversityName};";
+                $"\nВищий навчальний заклад: {UniversityName};";
             Console.WriteLine(information);
         }
 

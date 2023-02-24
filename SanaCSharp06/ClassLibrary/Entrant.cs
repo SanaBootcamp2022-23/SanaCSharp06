@@ -15,7 +15,7 @@
         }
         public Entrant(string firstName, string lastName, uint znoMark,
             uint schoolMark, string schoolName) : 
-            base(lastName, firstName)
+            base(firstName, lastName)
         {
             ZNOMark = znoMark;
             SchoolMark = schoolMark;
@@ -27,8 +27,8 @@
         {
             base.ShowInfo();
             string information = $"Кількість балів сертифікатів ЗНО: {ZNOMark};" +
-            $"\nКількість балів за документ про освіту: {SchoolMark};" +
-            $"\nНазва загальноосвітнього навчального закладу: {SchoolName}";
+                $"\nКількість балів за документ про освіту: {SchoolMark};" +
+                $"\nНазва загальноосвітнього навчального закладу: {SchoolName}";
             Console.WriteLine(information);
         }
     }
