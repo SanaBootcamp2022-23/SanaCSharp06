@@ -15,8 +15,6 @@
             Surname = surname;
         }
 
-        public Person() { }
-
         public virtual void ShowInfo()
         {
             string info = $"Ім'я: {Name};\nПрізвище: {Surname};";

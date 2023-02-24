@@ -7,4 +7,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SanaCSharp06.ClassLibrary\SanaCSharp06.ClassLibrary.csproj" />
+    </ItemGroup>
+
 </Project>

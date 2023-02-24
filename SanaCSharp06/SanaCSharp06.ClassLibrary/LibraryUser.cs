@@ -6,18 +6,18 @@
         public DateTime DateOfIssue { get; set; } = default;
         public ushort MonthlyReadershipFee { get; set; }
 
-        public LibraryUser(string libraryCardNumber, DateTime dateOfIssue, ushort monthlyReadershipFee) : this(libraryCardNumber, monthlyReadershipFee)
+        public LibraryUser(string name, string surname, DateTime dateOfBirth, string libraryCardNumber, DateTime dateOfIssue, ushort monthlyReadershipFee) : base(name, surname, dateOfBirth)
         {
+            LibraryCardNumber = libraryCardNumber;
+            MonthlyReadershipFee = monthlyReadershipFee;
             DateOfIssue = dateOfIssue;
         }
         
-        public LibraryUser(string libraryCardNumber, ushort monthlyReadershipFee)
+        public LibraryUser(string name, string surname, DateTime dateOfBirth, string libraryCardNumber, ushort monthlyReadershipFee) : base(name, surname, dateOfBirth)
         {
             LibraryCardNumber = libraryCardNumber;
             MonthlyReadershipFee = monthlyReadershipFee;
         }
-        public LibraryUser() { }
-        
         public override void ShowInfo()
         {
             base.ShowInfo();

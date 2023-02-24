@@ -5,19 +5,19 @@
         public string Position { get; set; }
         public string Chair { get; set; }
         public string UniversityName { get; set; } = String.Empty;
-        public Teacher(string position, string chair, string universityName) : this(position, chair)
+        public Teacher(string name, string surname, DateTime dateOfBirth, string position, string chair, string universityName) : base(name, surname, dateOfBirth)
         {
+            Position = position;
+            Chair = chair;
             UniversityName = universityName;
         }
 
-        public Teacher(string position, string chair)
+        public Teacher(string name, string surname, DateTime dateOfBirth, string position, string chair) : base(name, surname, dateOfBirth)
         {
             Position = position;
             Chair = chair;
         }
         
-        public Teacher() { }
-
         public override void ShowInfo()
         {
             base.ShowInfo();

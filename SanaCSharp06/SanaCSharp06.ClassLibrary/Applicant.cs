@@ -6,18 +6,18 @@
         public decimal DocumentOfEducationMark { get; set; }
         public string SchoolName { get; set; } = String.Empty;
 
-        public Applicant(decimal eiaMark, decimal documentOfEducationMark, string schoolName) : this(eiaMark, documentOfEducationMark)
+        public Applicant(string name, string surname, DateTime dateOfBirth, decimal eiaMark, decimal documentOfEducationMark, string schoolName) : base(name, surname, dateOfBirth)
         {
+            EIAMark = eiaMark;
+            DocumentOfEducationMark = documentOfEducationMark;
             SchoolName = schoolName;
         }
         
-        public Applicant(decimal eiaMark, decimal documentOfEducationMark)
+        public Applicant(string name, string surname, DateTime dateOfBirth, decimal eiaMark, decimal documentOfEducationMark) : base(name, surname, dateOfBirth)
         {
             EIAMark = eiaMark;
             DocumentOfEducationMark = documentOfEducationMark;
         }
-
-        public Applicant() { }
 
         public override void ShowInfo()
         {

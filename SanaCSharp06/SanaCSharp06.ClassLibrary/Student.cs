@@ -7,20 +7,19 @@
         public string FacultyName { get; set; }
         public string UniversityName { get; set; } = String.Empty;
 
-        public Student(short yearOfStudying, string groupName, string facultyName, string universityName) : this(yearOfStudying, groupName, facultyName)
+        public Student(string name, string surname, DateTime dateOfBirth, short yearOfStudying, string groupName, string facultyName, string universityName) : base(name, surname, dateOfBirth)
         {
             YearOfStudying = yearOfStudying;
             GroupName = groupName;
             FacultyName = facultyName;
             UniversityName = universityName;
         }
-        public Student(short yearOfStudying, string groupName, string facultyName)
+        public Student(string name, string surname, DateTime dateOfBirth, short yearOfStudying, string groupName, string facultyName) : base(name, surname, dateOfBirth)
         {
             YearOfStudying = yearOfStudying;
             GroupName = groupName;
             FacultyName = facultyName;
         }
-        public Student() { }
         public override void ShowInfo()
         {
             base.ShowInfo();
