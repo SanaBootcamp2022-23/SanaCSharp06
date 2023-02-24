@@ -5,7 +5,7 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
-        public Person(string firstName, string lastName, DateTime birthDate):this(firstName, lastName)
+        public Person(string firstName, string lastName, DateTime birthDate) : this(firstName, lastName)
         {
             BirthDate = birthDate;
         }
@@ -65,16 +65,16 @@
                 }
             }
         }
-        public Abiturient(string lastName, string firstName, DateTime birthDate, 
+        public Abiturient(string lastName, string firstName, DateTime birthDate,
             uint znoResult, uint basicEducationResult, string schoolName) :
             base(firstName, lastName, birthDate)
         {
-            
+
         }
         public Abiturient(string lastName, string firstName, uint znoResult,
             double basicEducationResult, string schoolName) : base(lastName, firstName)
         {
-            
+
         }
         public override string ShowInfo()
         {
@@ -146,5 +146,29 @@
                 $"Вищий навчальний заклад:{PlaceOfWork}";
         }
     }
-
+    public class LibraryEnjoyer : Person
+    {
+        public uint ReaderID { get; set; }
+        public DateTime RecieveDate { get; set; }
+        public double MonthlyFee { get; set; }
+        public LibraryEnjoyer(string lastName, string firstName, DateTime birthDate,
+            uint readerID, DateTime recieveDate, double monthlyFee) : base(lastName, firstName, birthDate)
+        {
+            ReaderID = readerID;
+            MonthlyFee = monthlyFee;
+            RecieveDate = recieveDate;
+        }
+        public LibraryEnjoyer(string lastName, string firstName,
+            uint readerID, DateTime recieveDate, double monthlyFee) : base(lastName, firstName)
+        {
+            ReaderID = readerID;
+            MonthlyFee = monthlyFee;
+            RecieveDate = recieveDate;
+        }
+        public override string ShowInfo()
+        {
+            return $"{base.ShowInfo()}\nНомер читацького квитка: {ReaderID}, Дата видачі: {RecieveDate}," +
+                $" Щомісячний внесок: {MonthlyFee}";
+        }
+    }
 }
