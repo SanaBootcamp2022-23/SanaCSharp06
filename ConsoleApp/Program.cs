@@ -26,6 +26,11 @@ namespace ConsoleApp
                 "Інженерія програмного забезпечення", "Доцент");
             people.Add(teacher);
 
+            Person person2 = new("Петро", "Петросян", new DateTime(2003, 2, 24));
+            LibraryMember libraryMember = new(person2, 239.99f);
+            people.Add(person2);
+            people.Add(libraryMember);
+
             foreach (var p  in people)
                 Console.WriteLine(p.ShowInfo());
         }
