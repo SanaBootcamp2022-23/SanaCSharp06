@@ -16,6 +16,7 @@
             FirstName = firstName;
             LastName = lastName;
         }
+        public Person() { }
 
         public virtual void ShowInfo()
         {
