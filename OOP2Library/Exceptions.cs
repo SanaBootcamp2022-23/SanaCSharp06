@@ -7,9 +7,9 @@
             : base(message) { }
     }
 
-    public class EIATestNotFoundExceptio : Exception
+    public class EIATestNotFoundException : Exception
     {
-        public EIATestNotFoundExceptio(string message
+        public EIATestNotFoundException(string message
             = "Вказаний предмет не знайдено!")
             : base(message) { }
     }

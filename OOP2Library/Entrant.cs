@@ -60,7 +60,7 @@
             }
             catch (InvalidOperationException)
             {
-                throw new Exceptions.EIATestNotFoundExceptio();
+                throw new Exceptions.EIATestNotFoundException();
             }
         }
         /// <summary>
