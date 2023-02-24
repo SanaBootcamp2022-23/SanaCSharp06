@@ -2,6 +2,8 @@
 {
     public class Person
     {
+        private protected string _title = "Людина";
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime Birthday { get; set; }
@@ -16,6 +18,8 @@
             LastName = lastName;
             Birthday = birthday;
         }
+        public Person(Person person)
+            : this(person.FirstName, person.LastName, person.Birthday) { }
 
         public override string ToString()
         {
@@ -24,7 +28,7 @@
 
         public virtual string ShowInfo()
         {
-            return $"{this}:\n\tДата народження: {Birthday:d}";
+            return $"{this} ({_title}):\n\tДата народження: {Birthday:d}";
         }
     }
 }
