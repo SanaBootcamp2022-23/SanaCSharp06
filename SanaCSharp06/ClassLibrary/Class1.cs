@@ -2,187 +2,84 @@
 {
     public class Person
     {
-
-        protected string FirstName;
-        protected string LastName;
-        protected string BirthDate;
-        public Person()
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime BirthDate { get; set; }
+        public Person(string firstName, string lastName, DateTime birthDate):this(firstName, lastName)
         {
-            FirstName = "John";
-            LastName = "Smith";
-            BirthDate = "Unknown";
-        }
-        public Person(string firstName, string lastName, uint birthDay, uint birthMonth, uint birthYear)
-        {
-            SetFirstName(firstName);
-            SetLastName(lastName);
-            SetBirthDate(birthDay, birthMonth, birthYear);
+            BirthDate = birthDate;
         }
         public Person(string lastName, string firstName)
         {
-            SetFirstName(firstName);
-            SetLastName(lastName);
-            BirthDate = "Unknown";
-        }
-        public string GetFirstName()
-        {
-            return $"{FirstName}";
-        }
-        public string GetLastName()
-        {
-            return $"{LastName}";
-        }
-        public string GetBirthDate()
-        {
-            return $"{BirthDate}";
-        }
-        public void SetFirstName(string newFirstName)
-        {
-            if (newFirstName != null)
-            {
-                this.FirstName = newFirstName;
-            }
-            else throw new Exception("Invalid First Name");
-        }
-        public void SetLastName(string newLastName)
-        {
-            if (newLastName != null)
-            {
-                this.LastName = newLastName;
-            }
-            else throw new Exception("Invalid Last Name");
-        }
-        public void SetBirthDate(uint birthDay, uint birthMonth, uint birthYear)
-        {
-            if (birthYear < 2023)
-            {
-                if (birthMonth <= 8)
-                {
-                    if (birthMonth == 2)
-                    {
-
-                        if (birthYear % 4 == 0)
-                        {
-                            if (birthDay <= 29)
-                            {
-                                this.BirthDate = $"{birthDay}.{birthMonth}.{birthYear}";
-                            }
-                            else throw new Exception("Invalid Day value");
-                        }else if (birthDay <= 28)
-                        {
-                            this.BirthDate = $"{birthDay}.{birthMonth}.{birthYear}";
-                        }
-                        else throw new Exception("Invalid Day value");
-
-                    }
-                    else if (birthMonth % 2 == 1 || birthMonth == 8)
-                    {
-                        if (birthDay <= 31)
-                        {
-                            this.BirthDate = $"{birthDay}.{birthMonth}.{birthYear}";
-                        }
-                        else
-                            throw new Exception("Invalid Day value");
-                    }
-                    else if (birthDay <= 30)
-                    {
-                        this.BirthDate = $"{birthDay}.{birthMonth}.{birthYear}";
-                    }
-                    else
-                        throw new Exception("Invalid Day value");
-                }
-                else if (birthMonth % 2 == 0)
-                {
-                    if (birthDay <= 31)
-                    {
-                        this.BirthDate = $"{birthDay}.{birthMonth}.{birthYear}";
-                    }
-                    else
-                        throw new Exception("Invalid Day value");
-                }
-                else if (birthDay <= 30)
-                {
-                    this.BirthDate = $"{birthDay}.{birthMonth}.{birthYear}";
-                }
-                else throw new Exception("Invalid Month Value");
-            }
-            else throw new Exception("Invalid Year Value");
+            LastName = lastName;
+            FirstName = firstName;
         }
         public virtual string ShowInfo()
         {
-            return $"Name:{LastName} {FirstName} Born:{BirthDate}";
+            if (BirthDate.Year == 1)
+                return $"Ім'я:{LastName} {FirstName}";
+            else return $"Ім'я:{LastName} {FirstName} Дата народження:{BirthDate.Day}.{BirthDate.Month}.{BirthDate.Year}";
         }
     }
     public class Abiturient : Person
     {
-        protected uint znoResult;
-        protected double basicEducationResult;
-        protected string schoolName;
-        public Abiturient()
+        public uint ZNOResult
         {
-            FirstName = "John";
-            LastName = "Smith";
-            BirthDate = "Unknown";
-            znoResult = 0;
-            basicEducationResult = 0;
-            schoolName = "Unknown";
-        }
-        public Abiturient(string lastName, string firstName, uint birthDay, uint birthMonth,
-            uint birthYear, uint znoResult, uint basicEducationResult, string schoolName) :
-            base(firstName, lastName, birthDay, birthMonth, birthYear)
-        {
-            SetZNOResult(znoResult);
-            SetSchoolName(schoolName);
-            SetBasicEducationResult(basicEducationResult);
-        }
-        public Abiturient(string lastName, string firstName, uint znoResult, 
-            double basicEducationResult, string schoolName):base(lastName, firstName)
-        {
-            SetZNOResult(znoResult);
-            SetSchoolName(schoolName);
-            SetBasicEducationResult(basicEducationResult);
-        }
-
-        public uint GetZNOResult()
-        {
-            return znoResult;
-        }
-        public double GetBasicEducationResult()
-        {
-            return basicEducationResult;
-        }
-        public string GetSchoolName()
-        {
-            return $"{schoolName}";
-        }
-        public void SetZNOResult(uint znoResult)
-        {
-            if (znoResult <= 200)
+            get
             {
-                this.znoResult = znoResult;
+                return ZNOResult;
             }
-            else throw new Exception("Invalid ZNO Result value");
-        }
-        public void SetBasicEducationResult(double basicEducationResult)
-        {
-            if (basicEducationResult > 0 && basicEducationResult <= 12)
+            set
             {
-                this.basicEducationResult = basicEducationResult;
+                if (ZNOResult <= 200)
+                {
+                    ZNOResult = value;
+                }
             }
-            else throw new Exception("Invalid Basic Education Result value");
         }
-        public void SetSchoolName(string schoolName)
+        public double SchoolResult
         {
-            if (schoolName != null)
+            get
             {
-                this.schoolName = schoolName;
+                return SchoolResult;
             }
-            else throw new Exception("Invalid School Name value");
+            set
+            {
+                if (SchoolResult > 0 && SchoolResult <= 12)
+                {
+                    SchoolResult = value;
+                }
+            }
+        }
+        public string SchoolName
+        {
+            get
+            {
+                return SchoolName;
+            }
+            set
+            {
+                if (SchoolName != null)
+                {
+                    SchoolName = value;
+                }
+            }
+        }
+        public Abiturient(string lastName, string firstName, DateTime birthDate, 
+            uint znoResult, uint basicEducationResult, string schoolName) :
+            base(firstName, lastName, birthDate)
+        {
+            
+        }
+        public Abiturient(string lastName, string firstName, uint znoResult,
+            double basicEducationResult, string schoolName) : base(lastName, firstName)
+        {
+            
         }
         public override string ShowInfo()
         {
-            return $"{base.ShowInfo()}\nZNO Results: {znoResult}, School Results: {basicEducationResult}, " +
-                $"School Name: {schoolName}";
+            return $"{base.ShowInfo()}\nZNO Results: {ZNOResult}, School Results: {SchoolResult}, " +
+                $"School Name: {SchoolName}";
         }
     }
 }
