@@ -6,4 +6,11 @@
             = "Неможливо додати декілька однакових предметів!")
             : base(message) { }
     }
+
+    public class EIATestNotFoundExceptio : Exception
+    {
+        public EIATestNotFoundExceptio(string message
+            = "Вказаний предмет не знайдено!")
+            : base(message) { }
+    }
 }

@@ -53,8 +53,15 @@
         /// <exception cref="ArgumentNullException"></exception>
         public void RemoveEIA(string subject)
         {
-            var test = _EIATests.First(t => t.subject.Equals(subject, StringComparison.OrdinalIgnoreCase));
-            _EIATests.Remove(test);
+            try
+            {
+                var test = _EIATests.First(t => t.subject.Equals(subject, StringComparison.OrdinalIgnoreCase));
+                _EIATests.Remove(test);
+            }
+            catch (InvalidOperationException)
+            {
+                throw new Exceptions.EIATestNotFoundExceptio();
+            }
         }
         /// <summary>
         /// Returns the average EIA score for this entrant.
@@ -68,11 +75,11 @@
         {
             string result = base.ShowInfo() + 
                 $"\n\tНазва навчального закладу: {InstitutionName}" +
-                $"\n\tДокумент про освіту: {EducationScore}б" +
+                $"\n\tДокумент про освіту: {EducationScore} б" +
                 $"\n\tРезультати ЗНО:";
             foreach (var (subject, score) in _EIATests)
-                result += $"\n\t\t{subject}: {score}б";
-            return result + $"\n\tСередній результат ЗНО: {EIAScore():F2}б";
+                result += $"\n\t\t{subject}: {score}";
+            return result + $"\n\tСередній результат ЗНО: {EIAScore():F2}";
         }
     }
 }
