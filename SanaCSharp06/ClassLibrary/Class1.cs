@@ -121,4 +121,30 @@
                 $"Факультет: {Faculty}, Вищий навчальний заклад: {PlaceOfStudy}";
         }
     }
+    public class Teacher : Person
+    {
+        public string JobPosition { get; set; }
+        public string Chair { get; set; }
+        public string PlaceOfWork { get; set; }
+        public Teacher(string lastName, string firstName, DateTime birthDate, string jobPosition,
+            string chair, string placeOfWork) : base(lastName, firstName, birthDate)
+        {
+            JobPosition = jobPosition;
+            Chair = chair;
+            PlaceOfWork = placeOfWork;
+        }
+        public Teacher(string lastName, string firstName, string jobPosition,
+            string chair, string placeOfWork) : base(lastName, firstName)
+        {
+            JobPosition = jobPosition;
+            Chair = chair;
+            PlaceOfWork = placeOfWork;
+        }
+        public override string ShowInfo()
+        {
+            return $"{base.ShowInfo()}\nПосада: {JobPosition}, Кафедра: {Chair}, " +
+                $"Вищий навчальний заклад:{PlaceOfWork}";
+        }
+    }
+
 }
