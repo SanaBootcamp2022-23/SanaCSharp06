@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp
+﻿using OOP2Library;
+
+namespace ConsoleApp
 {
     internal class Program
     {
