@@ -5,8 +5,10 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
-        public Person(string firstName, string lastName, DateTime birthDate) : this(firstName, lastName)
+        public Person(string firstName, string lastName, DateTime birthDate)
         {
+            FirstName = firstName;
+            LastName = lastName;
             BirthDate = birthDate;
         }
         public Person(string lastName, string firstName)
@@ -18,84 +20,43 @@
         {
             if (BirthDate.Year == 1)
                 return $"Ім'я:{LastName} {FirstName}";
-            else return $"Ім'я:{LastName} {FirstName} Дата народження:{BirthDate.Day}.{BirthDate.Month}.{BirthDate.Year}";
+            else return $"Ім'я:{LastName} {FirstName} Дата народження:" +
+                    $"{BirthDate.Day}.{BirthDate.Month}.{BirthDate.Year}\n";
         }
     }
     public class Abiturient : Person
     {
-        public uint ZNOResult
-        {
-            get
-            {
-                return ZNOResult;
-            }
-            set
-            {
-                if (value <= 200)
-                {
-                    ZNOResult = value;
-                }
-            }
-        }
-        public double SchoolResult
-        {
-            get
-            {
-                return SchoolResult;
-            }
-            set
-            {
-                if (value > 0 && value <= 12)
-                {
-                    SchoolResult = value;
-                }
-            }
-        }
+        public int ZNOResult { get; set; }
+
+        public uint SchoolResult { get; set; }
         public string SchoolName
-        {
-            get
-            {
-                return SchoolName;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    SchoolName = value;
-                }
-            }
-        }
+        { get; set; }
         public Abiturient(string lastName, string firstName, DateTime birthDate,
-            uint znoResult, uint basicEducationResult, string schoolName) :
+            int znoResult, uint basicEducationResult, string schoolName) :
             base(firstName, lastName, birthDate)
         {
-
+            ZNOResult = znoResult;
+            SchoolResult = basicEducationResult;
+            SchoolName = schoolName;
         }
-        public Abiturient(string lastName, string firstName, uint znoResult,
-            double basicEducationResult, string schoolName) : base(lastName, firstName)
+        public Abiturient(string lastName, string firstName, int znoResult,
+            uint basicEducationResult, string schoolName) : base(lastName, firstName)
         {
-
+            ZNOResult = znoResult;
+            SchoolResult = basicEducationResult;
+            SchoolName = schoolName;
         }
         public override string ShowInfo()
         {
-            return $"{base.ShowInfo()}\nРезультат ЗНО: {ZNOResult}, Кількість балів за середню освіту: {SchoolResult}, " +
-                $"Назва загальноосвітнього навчального закладу: {SchoolName}";
+            return $"{base.ShowInfo()}\nРезультат ЗНО: {ZNOResult}, Кількість балів за середню освіту: " +
+                $"{SchoolResult},\n" +
+                $"Назва загальноосвітнього навчального закладу: {SchoolName}\n";
         }
     }
     public class Student : Person
     {
         public uint YearOfStudy
-        {
-            get
-            {
-                return YearOfStudy;
-            }
-            set
-            {
-                if (value < 6)
-                    YearOfStudy = value;
-            }
-        }
+        { get; set; }
         public string GroupName { get; set; }
         public string Faculty { get; set; }
         public string PlaceOfStudy { get; set; }
@@ -117,8 +78,8 @@
         }
         public override string ShowInfo()
         {
-            return $"{base.ShowInfo}\nКурс: {YearOfStudy}, Група: {GroupName}\n" +
-                $"Факультет: {Faculty}, Вищий навчальний заклад: {PlaceOfStudy}";
+            return $"{base.ShowInfo()}\nКурс: {YearOfStudy}, Група: {GroupName}\n" +
+                $"Факультет: {Faculty}, Вищий навчальний заклад: {PlaceOfStudy}\n";
         }
     }
     public class Teacher : Person
@@ -143,7 +104,7 @@
         public override string ShowInfo()
         {
             return $"{base.ShowInfo()}\nПосада: {JobPosition}, Кафедра: {Chair}, " +
-                $"Вищий навчальний заклад:{PlaceOfWork}";
+                $"Вищий навчальний заклад:{PlaceOfWork}\n";
         }
     }
     public class LibraryEnjoyer : Person
@@ -167,8 +128,9 @@
         }
         public override string ShowInfo()
         {
-            return $"{base.ShowInfo()}\nНомер читацького квитка: {ReaderID}, Дата видачі: {RecieveDate}," +
-                $" Щомісячний внесок: {MonthlyFee}";
+            return $"{base.ShowInfo()}\nНомер читацького квитка: {ReaderID}, Дата видачі:" +
+                $" {RecieveDate.Day}.{RecieveDate.Month}.{RecieveDate.Year}," +
+                $" Щомісячний внесок: {MonthlyFee}\n";
         }
     }
 }
