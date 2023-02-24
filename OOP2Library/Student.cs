@@ -2,7 +2,7 @@
 {
     public class Student : Entrant
     {
-        public string UniversityName { get; }
+        public string UniversityName { get; set; }
         public string Faculty { get; set; }
         public string Course { get; set; }
         public string Group { get; set; }
@@ -32,8 +32,8 @@
 
         public override string ShowInfo()
         {
-            return base.ShowInfo() + 
-                $"\n\tУніверситет: {UniversityName}:" +
+            return base.ShowInfo() + "\n\tУніверситет:" +
+                $"\n\t\tНазва: {UniversityName}" +
                 $"\n\t\tФакультет: {Faculty}" +
                 $"\n\t\t{Course} курс, група {Group}";
         }
