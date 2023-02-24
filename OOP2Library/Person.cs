@@ -18,8 +18,6 @@
             LastName = lastName;
             Birthday = birthday;
         }
-        public Person(Person person)
-            : this(person.FirstName, person.LastName, person.Birthday) { }
 
         public override string ToString()
         {
@@ -28,7 +26,7 @@
 
         public virtual string ShowInfo()
         {
-            return $"{this} ({_title}):\n\tДата народження: {Birthday:d}";
+            return $"\n{this} ({_title}):\n\tДата народження: {Birthday:d}";
         }
     }
 }

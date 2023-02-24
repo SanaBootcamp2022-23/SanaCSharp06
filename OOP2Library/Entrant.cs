@@ -4,7 +4,7 @@
     {
         public string InstitutionName { get; }
         public int EducationScore { get; }
-        private List<(string subject, int score)> _EIATests;
+        internal List<(string subject, int score)> _EIATests;
 
         public Entrant(string firstName, string lastName, DateTime birthday,
             string institutionName, int educationScore,
@@ -13,7 +13,7 @@
         {
             InstitutionName = institutionName;
             EducationScore = educationScore;
-            _EIATests = new List<(string subject, int score)>(EIATests);
+            _EIATests = EIATests;
 
             _title = "Абітурієнт";
         }
