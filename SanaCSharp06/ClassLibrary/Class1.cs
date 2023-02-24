@@ -31,7 +31,7 @@
             }
             set
             {
-                if (ZNOResult <= 200)
+                if (value <= 200)
                 {
                     ZNOResult = value;
                 }
@@ -45,7 +45,7 @@
             }
             set
             {
-                if (SchoolResult > 0 && SchoolResult <= 12)
+                if (value > 0 && value <= 12)
                 {
                     SchoolResult = value;
                 }
@@ -59,7 +59,7 @@
             }
             set
             {
-                if (SchoolName != null)
+                if (value != null)
                 {
                     SchoolName = value;
                 }
@@ -78,8 +78,47 @@
         }
         public override string ShowInfo()
         {
-            return $"{base.ShowInfo()}\nZNO Results: {ZNOResult}, School Results: {SchoolResult}, " +
-                $"School Name: {SchoolName}";
+            return $"{base.ShowInfo()}\nРезультат ЗНО: {ZNOResult}, Кількість балів за середню освіту: {SchoolResult}, " +
+                $"Назва загальноосвітнього навчального закладу: {SchoolName}";
+        }
+    }
+    public class Student : Person
+    {
+        public uint YearOfStudy
+        {
+            get
+            {
+                return YearOfStudy;
+            }
+            set
+            {
+                if (value < 6)
+                    YearOfStudy = value;
+            }
+        }
+        public string GroupName { get; set; }
+        public string Faculty { get; set; }
+        public string PlaceOfStudy { get; set; }
+        public Student(string lastName, string firstName, DateTime birthDate, uint yearOfStudy,
+            string groupName, string faculty, string placeOfStudy) : base(lastName, firstName, birthDate)
+        {
+            YearOfStudy = yearOfStudy;
+            GroupName = groupName;
+            Faculty = faculty;
+            PlaceOfStudy = placeOfStudy;
+        }
+        public Student(string lastName, string firstName, uint yearOfStudy,
+          string groupName, string faculty, string placeOfStudy) : base(lastName, firstName)
+        {
+            YearOfStudy = yearOfStudy;
+            GroupName = groupName;
+            Faculty = faculty;
+            PlaceOfStudy = placeOfStudy;
+        }
+        public override string ShowInfo()
+        {
+            return $"{base.ShowInfo}\nКурс: {YearOfStudy}, Група: {GroupName}\n" +
+                $"Факультет: {Faculty}, Вищий навчальний заклад: {PlaceOfStudy}";
         }
     }
 }
