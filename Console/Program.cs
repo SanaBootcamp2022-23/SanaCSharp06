@@ -1,1 +1,16 @@
-﻿
+﻿using PeopleLibrary;
+Person person = new Person("idk", "idk2", DateTime.Now);
+Entrant entrant = new Entrant(person, 200, 200, "Gymnasium #1");
+Student student = new Student(entrant, 2, "IPZ-21-3", "FIKT", "Zhytomyr State University");
+Teacher teacher = new Teacher(person, "teacher", "dep", "Zhytomyr State University");
+LibraryUser libraryUser = new LibraryUser(person, "G-3243", DateTime.Now, 50);
+Console.WriteLine("\nPerson:");
+person.ShowInfo();
+Console.WriteLine("\nEntrant:");
+entrant.ShowInfo();
+Console.WriteLine("\nStudent:");
+student.ShowInfo();
+Console.WriteLine("\nTeacher:");
+teacher.ShowInfo();
+Console.WriteLine("\nLibraryUser:");
+libraryUser.ShowInfo();
