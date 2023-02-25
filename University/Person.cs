@@ -2,22 +2,25 @@
 {
     public class Person
     {
+        private string name;
+        private string surname;
+
         public string Name
         {
-            get { return Name; }
+            get { return name; }
             set
             {
-                if (!String.IsNullOrEmpty(Name))
-                    Name = value;
+                if (!string.IsNullOrEmpty(value))
+                    name = value;
             }
         }
         public string Surname
         {
-            get { return Surname; }
+            get { return surname; }
             set
             {
-                if (!String.IsNullOrEmpty(Surname))
-                    Surname = value;
+                if (!string.IsNullOrEmpty(value))
+                    surname = value;
             }
         }
         public DateTime DateOfBirth { get; set; }
@@ -35,7 +38,7 @@
         public virtual void ShowInfo()
         {
             Console.WriteLine($"Name: {Name}\nSurname: {Surname}\n" +
-                              $"Date of birth: {DateOfBirth.ToShortDateString()}\n");
+                              $"Date of birth: {DateOfBirth.ToShortDateString()}");
         }
     }
 }

@@ -8,40 +8,45 @@ namespace University
 {
     public class Student : Person
     {
+        private short course;
+        private string groupName;
+        private string facultyName;
+        private string universityName;
+
         public short Course
         {
-            get { return Course; }
+            get { return course; }
             set
             {
                 if (value >= 1 && value <= 6)
-                    Course = value;
+                    course = value;
             }
         }
         public string GroupName
         {
-            get { return GroupName; }
+            get { return groupName; }
             set
             {
-                if (!String.IsNullOrEmpty(GroupName))
-                    GroupName = value;
+                if (!string.IsNullOrEmpty(value))
+                    groupName = value;
             }
         }
         public string FacultyName
         {
-            get { return FacultyName; }
+            get { return facultyName; }
             set
             {
-                if (!String.IsNullOrEmpty(FacultyName))
-                    FacultyName = value;
+                if (!string.IsNullOrEmpty(value))
+                    facultyName = value;
             }
         }
         public string UniversityName
         {
-            get { return UniversityName; }
+            get { return universityName; }
             set
             {
-                if (!String.IsNullOrEmpty(UniversityName))
-                    UniversityName = value;
+                if (!string.IsNullOrEmpty(value))
+                    universityName = value;
             }
         }
 

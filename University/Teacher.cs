@@ -2,31 +2,35 @@
 {
     public class Teacher : Person
     {
+        private string positionName;
+        private string departmentName;
+        private string universityName;
+
         public string PositionName
         {
-            get { return PositionName; }
+            get { return positionName; }
             set
             {
-                if (!string.IsNullOrEmpty(PositionName))
-                    PositionName = value;
+                if (!string.IsNullOrEmpty(value))
+                    positionName = value;
             }
         }
         public string DepartmentName
         {
-            get { return DepartmentName; }
+            get { return departmentName; }
             set
             {
-                if (!string.IsNullOrEmpty(DepartmentName))
-                    DepartmentName = value;
+                if (!string.IsNullOrEmpty(value))
+                    departmentName = value;
             }
         }
         public string UniversityName
         {
-            get { return UniversityName; }
+            get { return universityName; }
             set
             {
-                if (!string.IsNullOrEmpty(UniversityName))
-                    UniversityName = value;
+                if (!string.IsNullOrEmpty(value))
+                    universityName = value;
             }
         }
 

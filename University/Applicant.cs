@@ -2,31 +2,35 @@
 {
     public class Applicant : Person
     {
+        private double zNORate;
+        private double schoolCertificateRate;
+        private string schoolName;
+
         public double ZNORate
         {
-            get { return ZNORate; }
+            get { return zNORate; }
             set
             {
                 if (value >= 100 && value <= 200)
-                    ZNORate = value;
+                    zNORate = value;
             }
         }
         public double SchoolCertificateRate
         {
-            get { return SchoolCertificateRate; }
+            get { return schoolCertificateRate; }
             set
             {
                 if (value > 0 && value < 12)
-                    SchoolCertificateRate = value;
+                    schoolCertificateRate = value;
             }
         }
         public string SchoolName
         {
-            get { return SchoolName; }
+            get { return schoolName; }
             set
             {
-                if (!String.IsNullOrEmpty(SchoolName))
-                    SchoolName = value;
+                if (!string.IsNullOrEmpty(value))
+                    schoolName = value;
             }
         }
 
