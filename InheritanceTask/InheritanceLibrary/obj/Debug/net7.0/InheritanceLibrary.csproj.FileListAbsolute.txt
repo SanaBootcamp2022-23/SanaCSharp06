@@ -1,0 +1,12 @@
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\bin\Debug\net7.0\InheritanceLibrary.deps.json
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\bin\Debug\net7.0\InheritanceLibrary.dll
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\bin\Debug\net7.0\InheritanceLibrary.pdb
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.csproj.AssemblyReference.cache
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.AssemblyInfoInputs.cache
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.AssemblyInfo.cs
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.csproj.CoreCompileInputs.cache
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.dll
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\refint\InheritanceLibrary.dll
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\InheritanceLibrary.pdb
+D:\Політех\Sana\SanaCSharp06\InheritanceTask\InheritanceLibrary\obj\Debug\net7.0\ref\InheritanceLibrary.dll
