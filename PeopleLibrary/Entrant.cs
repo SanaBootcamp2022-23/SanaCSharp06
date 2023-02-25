@@ -19,11 +19,11 @@ namespace PeopleLibrary
             SchoolName = schoolName;
 
         }
-        public Entrant(Person person, float ZNOPoints, string schoolName
+        public Entrant(Person person, float ZNOPoints, float schoolPoints, string schoolName
             ) : base(person.FirstName, person.LastName, person.BirthDate)
         {
             this.ZNOPoints = ZNOPoints;
-            SchoolPoints = 0;
+            SchoolPoints = schoolPoints;
             SchoolName = schoolName;
         }
         public override void ShowInfo()
