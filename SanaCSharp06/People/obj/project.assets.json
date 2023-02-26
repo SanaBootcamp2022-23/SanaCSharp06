@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "People/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/People.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/People.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "People/1.0.0": {
-      "type": "project",
-      "path": "../People/People.csproj",
-      "msbuildProject": "../People/People.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "People >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\defes\\.nuget\\packages\\": {}
@@ -32,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\SanaCSharp06\\SanaCSharp06.csproj",
-      "projectName": "SanaCSharp06",
-      "projectPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\SanaCSharp06\\SanaCSharp06.csproj",
+      "projectUniqueName": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj",
+      "projectName": "People",
+      "projectPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj",
       "packagesPath": "C:\\Users\\defes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\SanaCSharp06\\obj\\",
+      "outputPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\defes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,11 +33,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj": {
-              "projectPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

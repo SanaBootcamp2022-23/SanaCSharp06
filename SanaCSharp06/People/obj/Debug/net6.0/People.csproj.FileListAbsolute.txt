@@ -1,0 +1,12 @@
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\bin\Debug\net6.0\People.deps.json
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\bin\Debug\net6.0\People.dll
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\bin\Debug\net6.0\People.pdb
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.csproj.AssemblyReference.cache
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.AssemblyInfoInputs.cache
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.AssemblyInfo.cs
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.csproj.CoreCompileInputs.cache
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.dll
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\refint\People.dll
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\People.pdb
+C:\Users\defes\source\repos\SanaCSharp06\SanaCSharp06\People\obj\Debug\net6.0\ref\People.dll

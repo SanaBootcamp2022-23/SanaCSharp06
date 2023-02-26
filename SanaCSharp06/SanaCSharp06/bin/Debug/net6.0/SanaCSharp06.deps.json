@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SanaCSharp06/1.0.0": {
+        "dependencies": {
+          "People": "1.0.0"
+        },
+        "runtime": {
+          "SanaCSharp06.dll": {}
+        }
+      },
+      "People/1.0.0": {
+        "runtime": {
+          "People.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SanaCSharp06/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "People/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
