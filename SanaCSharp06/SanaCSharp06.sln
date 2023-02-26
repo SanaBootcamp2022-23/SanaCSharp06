@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanaCSharp06", "SanaCSharp06\SanaCSharp06.csproj", "{B51478AA-407C-41F0-9FCA-8E809FF4B071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{6AD730CA-6EBD-4C9A-958D-4FC1DA2663CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B51478AA-407C-41F0-9FCA-8E809FF4B071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51478AA-407C-41F0-9FCA-8E809FF4B071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51478AA-407C-41F0-9FCA-8E809FF4B071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51478AA-407C-41F0-9FCA-8E809FF4B071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD730CA-6EBD-4C9A-958D-4FC1DA2663CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD730CA-6EBD-4C9A-958D-4FC1DA2663CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD730CA-6EBD-4C9A-958D-4FC1DA2663CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD730CA-6EBD-4C9A-958D-4FC1DA2663CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {335B9D5E-26DA-4389-8E04-02D0D2E7BBC0}
+	EndGlobalSection
+EndGlobal
