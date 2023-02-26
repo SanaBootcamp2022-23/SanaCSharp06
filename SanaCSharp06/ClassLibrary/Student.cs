@@ -53,5 +53,10 @@ namespace ClassLibrary
             set { _GroupName = value;}
             get { return _GroupName; }
         }
+
+        public override string ShowInfo()
+        {
+            return base.ShowInfo() + $"{_NameOfUniversity} {_Faculty} {_Course} {_GroupName}";
+        }
     }
 }

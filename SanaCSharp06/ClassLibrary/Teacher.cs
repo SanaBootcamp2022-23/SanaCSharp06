@@ -44,5 +44,10 @@ namespace ClassLibrary
             get { return _NameOfUniversity; }
             set { _NameOfUniversity = value; }
         }
+
+        public override string ShowInfo()
+        {
+            return base.ShowInfo() + $"{_Position} {_Cathedra} {_NameOfUniversity}";
+        }
     }
 }

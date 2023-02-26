@@ -48,8 +48,7 @@ namespace ClassLibrary
 
         public override string ShowInfo()
         {
-            return $"{_FirstName} {_LastName} {_BirthDate}" + 
-                $"\n{_NameOfSchool} {_PointOfcertificate}\n" + ZNOpointsToString();
+            return base.ShowInfo() + $"\n{_NameOfSchool} {_PointOfcertificate}\n" + ZNOpointsToString();
         }
 
         private string ZNOpointsToString()
