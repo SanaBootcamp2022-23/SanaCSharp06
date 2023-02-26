@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace People
 {
-    public class Applicant
+    public class Applicant:Person
     {
         public double ZNOPoints { get; set; }
         public double СertificatePoints { get; set; }
