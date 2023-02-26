@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj",
+      "projectUniqueName": "C:\\Users\\defes\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj",
       "projectName": "People",
-      "projectPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj",
+      "projectPath": "C:\\Users\\defes\\SanaCSharp06\\SanaCSharp06\\People\\People.csproj",
       "packagesPath": "C:\\Users\\defes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\defes\\source\\repos\\SanaCSharp06\\SanaCSharp06\\People\\obj\\",
+      "outputPath": "C:\\Users\\defes\\SanaCSharp06\\SanaCSharp06\\People\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\defes\\AppData\\Roaming\\NuGet\\NuGet.Config",
