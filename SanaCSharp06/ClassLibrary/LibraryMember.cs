@@ -46,7 +46,7 @@ namespace ClassLibrary
 
         public override string ShowInfo()
         {
-            return base.ShowInfo() + $"{Id} {StartDate} {Payment}";
+            return base.ShowInfo() + $" {Id} {StartDate} {Payment}";
         }
     }
 }

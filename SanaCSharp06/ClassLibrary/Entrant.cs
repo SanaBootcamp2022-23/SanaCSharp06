@@ -12,8 +12,6 @@ namespace ClassLibrary
         protected double _PointOfcertificate;
         protected Dictionary<string, double> _ZNOPoints;
 
-        public Entrant() { }
-
         public Entrant(string firstName, string lastName, DateTime bdate, string nameOfSchool, double pointOfcertificate, Dictionary<string, double> zNOPoints) : base(firstName, lastName, bdate)
         {
             _NameOfSchool = nameOfSchool;

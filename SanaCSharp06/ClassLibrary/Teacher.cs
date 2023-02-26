@@ -11,7 +11,6 @@ namespace ClassLibrary
         protected string _Position;
         protected string _Cathedra;
         protected string _NameOfUniversity;
-        public Teacher() { }
 
         public Teacher(string firstName, string lastName, DateTime bdate, 
             string position, string cathedra, string nameOfUniversity) : base(firstName, lastName, bdate)
@@ -47,7 +46,7 @@ namespace ClassLibrary
 
         public override string ShowInfo()
         {
-            return base.ShowInfo() + $"{_Position} {_Cathedra} {_NameOfUniversity}";
+            return base.ShowInfo() + $" {_Position} {_Cathedra} {_NameOfUniversity}";
         }
     }
 }

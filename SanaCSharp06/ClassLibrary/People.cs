@@ -6,7 +6,6 @@
         protected string _LastName;
         protected DateTime _BirthDate;
 
-        public People() { }
 
         public People(string firstName, string lastName)
         {
@@ -44,7 +43,7 @@
 
         public virtual string ShowInfo()
         {
-            return $"{_FirstName} {_LastName} {_BirthDate}";
+            return $" {_FirstName} {_LastName} {_BirthDate.ToShortDateString()}";
         }
     }
 }

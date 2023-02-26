@@ -13,7 +13,6 @@ namespace ClassLibrary
         protected string _Faculty;
         protected string _NameOfUniversity;
 
-        public Student() { }
 
         public Student(string firstName, string secondName, DateTime bdate, int course, string groupName, string faculty, string nameOfUniversity):base(firstName, secondName, bdate)
         {
@@ -56,7 +55,7 @@ namespace ClassLibrary
 
         public override string ShowInfo()
         {
-            return base.ShowInfo() + $"{_NameOfUniversity} {_Faculty} {_Course} {_GroupName}";
+            return base.ShowInfo() + $" {_NameOfUniversity} {_Faculty} {_Course} {_GroupName}";
         }
     }
 }
