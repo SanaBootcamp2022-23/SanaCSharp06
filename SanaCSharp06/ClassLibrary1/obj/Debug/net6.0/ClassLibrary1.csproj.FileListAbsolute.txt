@@ -1,0 +1,12 @@
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.deps.json
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.dll
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.pdb
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.csproj.AssemblyReference.cache
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.AssemblyInfoInputs.cache
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.AssemblyInfo.cs
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.dll
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\refint\ClassLibrary1.dll
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.pdb
+D:\source\repos\SanaCSharp06\SanaCSharp06\ClassLibrary1\obj\Debug\net6.0\ref\ClassLibrary1.dll
