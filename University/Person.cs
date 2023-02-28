@@ -20,9 +20,9 @@ namespace University
 
         public virtual void ShowInfo() {
             Console.WriteLine("Person: ");
-            Console.WriteLine($"  First name - {this.FirstName}");
-            Console.WriteLine($"  Last name - {this.LastName}");
-            Console.WriteLine($"  Date of birth  - {this.DateOfBirth}");
+            Console.WriteLine($"  First name: {this.FirstName}");
+            Console.WriteLine($"  Last name: {this.LastName}");
+            Console.WriteLine($"  Date of birth: {this.DateOfBirth}");
         }
     }
 }

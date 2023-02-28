@@ -20,7 +20,7 @@ public class LibraryCustomer : Person {
     }
 
     public override void ShowInfo() {
-        Console.WriteLine("Student:");
+        Console.WriteLine("Library customer:");
         Console.WriteLine($"  First name: {this.FirstName}");
         Console.WriteLine($"  Last name: {this.LastName}");
         Console.WriteLine($"  Date of birth: {this.DateOfBirth}");
