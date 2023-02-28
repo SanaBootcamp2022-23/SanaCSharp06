@@ -4,20 +4,18 @@
     {
         protected string Name;
         protected string Surname;
-        protected DateTime DateOfBirthday;
+        protected DateTime DateOfBirth;
 
-        public Person(string name, string surname, DateTime dateofbirthday)
+        public Person(string name, string surname, DateTime dateofbirth):this(name,surname)
         {
-            this.Name = name;
-            this.Surname = surname;
-            this.DateOfBirthday = dateofbirthday;
+            this.DateOfBirth = dateofbirth;
         }
 
         public Person(string name, string surname)
         {
             Name = name;
             Surname = surname;
-            DateOfBirthday = new DateTime(2001, 12, 17);
+            DateOfBirth = new DateTime(2001, 12, 17);
         }
 
         public string NameProperty
@@ -32,15 +30,15 @@
             set { Surname = value; }
         }
 
-        public DateTime DateOfBirthdayProperty
+        public DateTime DateOfBirthProperty
         {
-            get { return DateOfBirthday; }
-            set { DateOfBirthday = value; }
+            get { return DateOfBirth; }
+            set { DateOfBirth = value; }
         }
 
         public virtual void ShowInfo()
         {
-            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -{ DateOfBirthday}\n");
+            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -{ DateOfBirth}\n");
         }
 
     }
