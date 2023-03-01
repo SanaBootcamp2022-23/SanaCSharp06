@@ -8,29 +8,29 @@ namespace ClassLibrary
 {
     public class Entrant : Person
     {
-        protected float SumZNOResult;
-        protected float SumEducationDocumentResult;
+        protected double SumZNOResult;
+        protected double SumEducationDocumentResult;
         protected string NameOfSchool;
 
-        public Entrant(string name, string surname, DateTime dateofbirth, float
-       sumZNOresult, float sumEducationDocumentResult, string nameOfSchool) : this(name,surname,dateofbirth, sumZNOresult, sumEducationDocumentResult)
+        public Entrant(string name, string surname, DateTime dateofbirth, double
+       sumZNOresult, double sumEducationDocumentResult, string nameOfSchool) : this(name,surname,dateofbirth, sumZNOresult, sumEducationDocumentResult)
         {
             NameOfSchool = nameOfSchool;
         }
-        public Entrant(string name, string surname, DateTime dateofbirth, float
-       sumZNOresult, float sumEducationDocumentResult) : base(name, surname, dateofbirth)
+        public Entrant(string name, string surname, DateTime dateofbirth, double
+       sumZNOresult, double sumEducationDocumentResult) : base(name, surname, dateofbirth)
         {
             SumZNOResult = sumZNOresult;
             SumEducationDocumentResult = sumEducationDocumentResult;
             NameOfSchool = "School21";
         }
 
-        public float SumZnoResultProperty
+        public double SumZnoResultProperty
         {
             get { return SumZNOResult; }
             set { SumZNOResult = value; }
         }
-        public float SumEducationDocumentResultProperty
+        public double SumEducationDocumentResultProperty
         {
             get { return SumEducationDocumentResult; }
             set { SumEducationDocumentResult = value; }

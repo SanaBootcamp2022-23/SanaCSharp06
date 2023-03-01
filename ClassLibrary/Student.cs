@@ -13,16 +13,16 @@ namespace ClassLibrary
         protected string Faculty;
         protected string NameOfInstitution;
 
-        public Student(string name, string surname, DateTime dateofbirthday, float
-       sumZNOresult, float sumEducationDocumentResult, string nameOfSchool, int course, string
+        public Student(string name, string surname, DateTime dateofbirthday, double
+       sumZNOresult, double sumEducationDocumentResult, string nameOfSchool, int course, string
        group, string faculty, string nameOfInstitution) :this(name,surname,dateofbirthday,sumZNOresult,sumEducationDocumentResult,nameOfSchool,course,nameOfInstitution)
         {
             Group = group;
             Faculty = faculty;
         }
 
-        public Student(string name, string surname, DateTime dateofbirthday, float
-       sumZNOresult, float sumEducationDocumentResult, string nameOfSchool, int course, string
+        public Student(string name, string surname, DateTime dateofbirthday, double
+       sumZNOresult, double sumEducationDocumentResult, string nameOfSchool, int course, string
        nameOfInstitution) : base(name, surname, dateofbirthday, sumZNOresult, sumEducationDocumentResult, nameOfSchool)
         {
             NameOfInstitution = nameOfInstitution;
