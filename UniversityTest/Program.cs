@@ -13,7 +13,7 @@ Teacher teacher = new Teacher("Олександр", "Степанець",new Dat
 teacher.ShowInfo();
 
 LibraryUser libraryUser = new LibraryUser("Анатолій", "Хмільно-Вишневий", new DateTime(1995, 1, 1),
-    12345, 10.99m,new DateTime(2022, 1, 1));
+    12345, 10.99m, new DateTime(2022, 1, 1));
 libraryUser.ShowInfo();
 
 Console.ReadLine();
