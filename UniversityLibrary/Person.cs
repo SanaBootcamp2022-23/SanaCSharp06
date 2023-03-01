@@ -55,6 +55,6 @@ public class Person
     public DateTime DateOfBirth { get; set; }
     public virtual void ShowInfo()
     {
-        Console.WriteLine($"Імʼя: {Name}\nПрізвище: {Surname}\nДата народження: {DateOfBirth.ToShortDateString()}\n");
+        Console.WriteLine($"Імʼя: {Name}\nПрізвище: {Surname}\nДата народження: {DateOfBirth.ToShortDateString()}");
     }
 }
