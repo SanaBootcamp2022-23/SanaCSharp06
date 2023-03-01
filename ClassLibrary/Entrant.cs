@@ -43,7 +43,7 @@ namespace ClassLibrary
 
         public override void ShowInfo()
         {
-            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -{DateOfBirth} // кількість балів сертифікатів ЗНО -> {SumZNOResult} // кількість балів за документ про освіту ->{SumEducationDocumentResult} // назва загальноосвітнього навчальногозакладу->{NameOfSchool}");
+            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -> {DateOfBirth} // кількість балів сертифікатів ЗНО -> {SumZNOResult} // кількість балів за документ про освіту -> {SumEducationDocumentResult} // назва загальноосвітнього навчального закладу -> {NameOfSchool}\n");
         }
     }
 }

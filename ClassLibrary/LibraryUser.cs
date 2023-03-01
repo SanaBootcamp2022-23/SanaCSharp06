@@ -43,7 +43,7 @@ namespace ClassLibrary
 
         public override void ShowInfo()
         {
-            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -{DateOfBirth} // номер читацького квитка -> {NumberTicket} // дата видачі ->{DateOfGiving} //  розмір щомісячного читацького внеску ->{PriceForMonth}\n");
+            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -> {DateOfBirth} // номер читацького квитка -> {NumberTicket} // дата видачі -> {DateOfGiving} //  розмір щомісячного читацького внеску -> {PriceForMonth}\n");
         }
     }
 }

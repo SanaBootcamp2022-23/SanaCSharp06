@@ -38,7 +38,7 @@
 
         public virtual void ShowInfo()
         {
-            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -{ DateOfBirth}\n");
+            Console.WriteLine($"Ім'я -> {Name} // прізвище -> {Surname} // дата народження -> { DateOfBirth}\n");
         }
 
     }
