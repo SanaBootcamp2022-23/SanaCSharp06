@@ -5,28 +5,28 @@ public class Person
     private string _name;
     private string _surname;
 
-    protected Person()
+    public Person()
     {
         _name = "name";
         _surname = "surname";
         DateOfBirth = DateTime.MinValue;
     }
 
-    protected Person(string name, string surname)
+    public Person(string name, string surname)
     {
         Name = name;
         Surname = surname;
         DateOfBirth = DateTime.MinValue;
     }
 
-    protected Person(string name, string surname, DateTime dateOfBirth)
+    public Person(string name, string surname, DateTime dateOfBirth)
     {
         Name = name;
         Surname = surname;
         DateOfBirth = dateOfBirth;
     }
 
-    protected Person(Person person)
+    public Person(Person person)
     {
         _name = person.Name;
         _surname = person.Surname;

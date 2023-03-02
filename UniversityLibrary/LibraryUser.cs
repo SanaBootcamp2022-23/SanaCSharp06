@@ -5,6 +5,13 @@ public class LibraryUser : Person
     private int _readerTicketNumber;
     private decimal _monthlyFee;
     private DateTime _issueDate;
+
+    public LibraryUser()
+    {
+        _readerTicketNumber = 0;
+        _monthlyFee = 0;
+        _issueDate = DateTime.MinValue;
+    }
     public LibraryUser(string name, string surname, int readerTicketNumber, decimal monthlyFee, 
         DateTime issueDate) : base(name, surname)
     {
@@ -63,6 +70,6 @@ public class LibraryUser : Person
     {
         base.ShowInfo();
         Console.WriteLine($"Номер читацького квитка: {ReaderTicketNumber}\nДата видачі: {IssueDate}\n" +
-                          $"Розмір щомісячного читацького внеску: {MonthlyFee} грн.\n");
+                          $"Розмір щомісячного читацького внеску: {MonthlyFee} грн.");
     }
 }

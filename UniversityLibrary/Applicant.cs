@@ -5,7 +5,13 @@ public class Applicant : Person
     private double _externalExamPoints;
     private double _educationDocPoints;
     private string _schoolName;
-    
+
+    public Applicant()
+    {
+        _externalExamPoints = 0.0;
+        _educationDocPoints = 0.0;
+        _schoolName = "unknown";
+    }
     public Applicant(string name, string surname, double externalExamPoints, double educationDocPoints,
         string schoolName) : base(name, surname)
     {
@@ -64,6 +70,6 @@ public class Applicant : Person
     {
         base.ShowInfo();
         Console.WriteLine($"Кількість балів сертифікатів ЗНО: {ExternalExamPoints}\nКількість балів за документ про освіту: {EducationDocPoints}\n" +
-                          $"Назва загальноосвітнього навчального закладу: {SchoolName}\n");
+                          $"Назва загальноосвітнього навчального закладу: {SchoolName}");
     }
 }

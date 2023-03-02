@@ -64,6 +64,6 @@ public class Teacher : Person
     {
         base.ShowInfo();
         Console.WriteLine($"Посада: {Position}\nКафедра: {Department}\n" +
-                          $"Вищий навчальний заклад: {HigherEducationInstitution}\n");
+                          $"Вищий навчальний заклад: {HigherEducationInstitution}");
     }
 }

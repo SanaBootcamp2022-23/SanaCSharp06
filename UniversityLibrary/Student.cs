@@ -1,14 +1,23 @@
 namespace UniversityLibrary;
 
-public class Student : Person
+public class Student : Applicant
 {
     private int _course;
     private string _group;
     private string _faculty;
     private string _higherEducationInstitution;
 
-    public Student(string name, string surname, int course, string group, string faculty, string higherEducationInstitution) 
-        : base(name, surname)
+    public Student()
+    {
+        _course = 0;
+        _group = "unknown";
+        _faculty = "unknown";
+        _higherEducationInstitution = "unknown";
+    }
+    public Student(string name, string surname, double externalExamPoints, double educationDocPoints,
+        string schoolName, int course, string group, string faculty, string higherEducationInstitution) 
+        : base(name, surname, externalExamPoints, educationDocPoints,
+            schoolName)
     {
         Course = course;
         Group = group;
@@ -16,8 +25,10 @@ public class Student : Person
         HigherEducationInstitution = higherEducationInstitution;
     }
 
-    public Student(string name, string surname, DateTime dateOfBirth, int course, string group, string faculty, string higherEducationInstitution) 
-        : base(name, surname, dateOfBirth)
+    public Student(string name, string surname, DateTime dateOfBirth, double externalExamPoints,
+        double educationDocPoints, string schoolName, int course, string group, 
+        string faculty, string higherEducationInstitution) 
+        : base(name, surname, dateOfBirth, externalExamPoints, educationDocPoints, schoolName)
     {
         Course = course;
         Group = group;
@@ -25,8 +36,9 @@ public class Student : Person
         HigherEducationInstitution = higherEducationInstitution;
     }
 
-    public Student(Person person, int course, string group, string faculty, string higherEducationInstitution) 
-        : base(person)
+    public Student(Person person, double externalExamPoints, double educationDocPoints, string schoolName, 
+        int course, string group, string faculty, string higherEducationInstitution) 
+        : base(person, externalExamPoints, educationDocPoints, schoolName)
     {
         Course = course;
         Group = group;
@@ -77,6 +89,6 @@ public class Student : Person
     {
         base.ShowInfo();
         Console.WriteLine($"Курс: {Course}\nГрупа: {Group}\nФакультет: {Faculty}\n" +
-                          $"Вищий навчальний заклад: {HigherEducationInstitution}\n");
+                          $"Вищий навчальний заклад: {HigherEducationInstitution}");
     }
 }
