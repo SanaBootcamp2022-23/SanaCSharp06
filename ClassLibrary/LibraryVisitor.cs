@@ -8,14 +8,16 @@ namespace ClassLibrary
 {
     public class LibraryVisitor : Person
     {
-        public int NumberOfTicket { get; set; } = 0;
-        public string Date { get; set; } = "26.06.2021";
-        public int AmountOfFee { get; set; } = 124;
+        public int NumberOfTicket { get; set; }
+        public DateTime Date { get; set; }
+        public int AmountOfFee { get; set; }
         public LibraryVisitor()
         {
-
-        }
-        public LibraryVisitor(string dateOfBirthday, string name, string surname, int numberOfTicket, string date, int amountOfFee)
+            NumberOfTicket = 0;
+            Date = new DateTime(2021, 9, 1, 0, 0, 0);
+            AmountOfFee = 124;
+    }
+        public LibraryVisitor(DateTime dateOfBirthday, string name, string surname, int numberOfTicket, DateTime date, int amountOfFee)
             : base(dateOfBirthday, name, surname)
         {
             NumberOfTicket = numberOfTicket;
@@ -26,7 +28,7 @@ namespace ClassLibrary
         {
             Console.WriteLine("LibraryVisitor:");
             Console.WriteLine($"Name:{Name} Surname: {Surname} " +
-                $"Date of bitrthday: {DateOfBirthday} NumberOfTicket: {NumberOfTicket} Date: {Date} " +
+                $"Date of bitrthday: {DateOfBirthday.Day}/{DateOfBirthday.Month}/{DateOfBirthday.Year} NumberOfTicket: {NumberOfTicket} Date: {Date.Day}/{Date.Month}/{Date.Year} " +
                 $"AmountOfFee: {AmountOfFee}");
         }
     }

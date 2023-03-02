@@ -8,16 +8,19 @@ namespace ClassLibrary
 {
     public class Student : Person
     {
-        private int Course { get; set; } = 2;
-        private string Group { get; set; } = "DA-12";
-        private string Faculty { get; set; } = "IASA";
-        private string University { get; set; } = "KPI";
+        public int Course { get; set; }
+        public string Group { get; set; }
+        public string Faculty { get; set; }
+        public string University { get; set; }
 
         public Student()
         {
-
+            Course = 2;
+            Group = "DA-12";
+            Faculty = "IASA";
+            University = "KPI";
         }
-        public Student(string dateOfBirthday, string name, string surname, int course, string group, string faculty, string university)
+        public Student(DateTime dateOfBirthday, string name, string surname, int course, string group, string faculty, string university)
             : base(dateOfBirthday, name, surname)
         {
             Course = course;
@@ -29,7 +32,7 @@ namespace ClassLibrary
         {
             Console.WriteLine("Student:");
             Console.WriteLine($"Name:{Name} Surname: {Surname} " +
-                $"Date of bitrthday: {DateOfBirthday} Course: {Course} Group: {Group} " +
+                $"Date of bitrthday: {DateOfBirthday.Day}/{DateOfBirthday.Month}/{DateOfBirthday.Year} Course: {Course} Group: {Group} " +
                 $"Faculty: {Faculty} University: {University}");
         }
 

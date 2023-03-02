@@ -8,14 +8,16 @@ namespace ClassLibrary
 {
     public class Applicant : Person
     {
-        public int ZnoPoints { get; set; } = 200;
-        public int AvaragePoints { get; set; } = 12;
-        public string School { get; set; } = "Symonivska School";
+        public int ZnoPoints { get; set; }
+        public int AvaragePoints { get; set; }
+        public string School { get; set; }
         public Applicant()
         {
-
-        }
-        public Applicant(string dateOfBirthday, string name, string surname, int znoPoints, int avaragePoints, string school)
+            ZnoPoints = 200;
+            AvaragePoints = 12;
+            School = "Symonivska School";
+    }
+        public Applicant(DateTime dateOfBirthday, string name, string surname, int znoPoints, int avaragePoints, string school)
             : base(dateOfBirthday, name, surname)
         {
             ZnoPoints = znoPoints;
@@ -26,7 +28,7 @@ namespace ClassLibrary
         {
             Console.WriteLine("Applicant:");
             Console.WriteLine($"Name:{Name} Surname: {Surname} " +
-                $"Date of bitrthday: {DateOfBirthday} ZnoPoints: {ZnoPoints} AvaragePoints: {AvaragePoints} " +
+                $"Date of bitrthday: {DateOfBirthday.Day}/{DateOfBirthday.Month}/{DateOfBirthday.Year} ZnoPoints: {ZnoPoints} AvaragePoints: {AvaragePoints} " +
                 $"School: {School}");
         }
 
