@@ -21,9 +21,9 @@ namespace ClassLibrary
         public override void ShowInfo()
         {
             base.ShowInfo();
-            Console.WriteLine($"Position: {_position}");
-            Console.WriteLine($"Chair: {_chair}");
-            Console.WriteLine($"University: {_university}");
+            Console.WriteLine($"Посада: {_position}");
+            Console.WriteLine($"Кафедра: {_chair}");
+            Console.WriteLine($"ВНЗ: {_university}");
         }
     }
 }

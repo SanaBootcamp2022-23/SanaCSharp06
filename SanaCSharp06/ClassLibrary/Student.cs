@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    public class Student : Person
+    public class Student : Applicant
     {
         protected string _course { get; set; }
         protected string _group { get; set; }
         protected string _faculty { get; set; }
         protected string _university { get; set; }
         public Student() { }
-        public Student(string name, string surname, DateTime dateTime, string course, string group, string faculty, string university) : base(name, surname, dateTime)
+        public Student(string name, string surname, DateTime dateTime, string course, string group, string faculty, string university, double znoResult, double certeficateResult, string schoolName) : base(name, surname, dateTime, znoResult, certeficateResult, schoolName)
         {
             _course = course;
             _group = group;

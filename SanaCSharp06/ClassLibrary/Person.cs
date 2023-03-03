@@ -14,9 +14,9 @@
         }
         public virtual void ShowInfo()
         {
-            Console.WriteLine($"Name: {_name}");
-            Console.WriteLine($"Surname: {_surname}");
-            Console.WriteLine($"Date: {_dateTime.Year}.{_dateTime.Month}.{_dateTime.Day}.");
+            Console.WriteLine($"Ім'я: {_name}");
+            Console.WriteLine($"Прізвище: {_surname}");
+            Console.WriteLine($"Дата народження: {_dateTime.Year}.{_dateTime.Month}.{_dateTime.Day}.");
         }
     }
 }

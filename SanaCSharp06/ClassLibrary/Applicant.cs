@@ -22,8 +22,8 @@ namespace ClassLibrary
         {
             base.ShowInfo();
             Console.WriteLine($"ZNO: {_ZNOresult} ");
-            Console.WriteLine($"Certeficate Result: {_certeficateResult}");
-            Console.WriteLine($"School: {_schoolName}");
+            Console.WriteLine($"Атестат: {_certeficateResult}");
+            Console.WriteLine($"Школа: {_schoolName}");
         }
     }
 }
