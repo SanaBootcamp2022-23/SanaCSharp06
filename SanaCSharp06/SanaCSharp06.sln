@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanaCSharp06_ConsoleApp", "SanaCSharp06_ConsoleApp\SanaCSharp06_ConsoleApp.csproj", "{6046D84A-F824-4748-BB9F-51D9DB22511D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanaCSharp06_ClassLibrary", "SanaCSharp06_ClassLibrary\SanaCSharp06_ClassLibrary.csproj", "{9DF2114A-FCBD-442C-BB73-4C0D3C6A7B95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6046D84A-F824-4748-BB9F-51D9DB22511D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6046D84A-F824-4748-BB9F-51D9DB22511D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6046D84A-F824-4748-BB9F-51D9DB22511D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6046D84A-F824-4748-BB9F-51D9DB22511D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF2114A-FCBD-442C-BB73-4C0D3C6A7B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF2114A-FCBD-442C-BB73-4C0D3C6A7B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF2114A-FCBD-442C-BB73-4C0D3C6A7B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF2114A-FCBD-442C-BB73-4C0D3C6A7B95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B75ABF3-F31D-4768-BF96-86C950A78DC9}
+	EndGlobalSection
+EndGlobal
