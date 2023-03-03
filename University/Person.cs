@@ -1,9 +1,9 @@
 namespace University
 {
     public class Person {
-        private string _firstName = "Undefined";
-        private string _lastName = "Undefined";
-        private DateOnly _dateOfBirth;
+        protected string _firstName = "Undefined";
+        protected string _lastName = "Undefined";
+        protected DateOnly _dateOfBirth;
 
         public string FirstName { get => _firstName; set => _firstName = value  ?? "Undefined"; }
         public string LastName { get => _lastName; set => _lastName = value  ?? "Undefined"; }
