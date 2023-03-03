@@ -8,18 +8,23 @@ namespace SanaCSharp06_ClassLibrary
 {
     public class LibraryUser : Person
     {
+        private double _libraryFee;
         public uint LibraryTicketID { get; set; }
         public DateTime IssueDate { get; set; } = default;
-        public double LibraryFee { get; set; }
+        public double LibraryFee
+        {
+            get { return _libraryFee; }
+            set { if (value > 0 && value < 200) _libraryFee = value; }
+        }
 
-        public LibraryUser(string firstName, string lastName, DateTime birthDate, uint libraryTicketID, DateTime issueDate) 
+        public LibraryUser(string firstName, string lastName, DateTime birthDate, uint libraryTicketID, DateTime issueDate)
             : base(firstName, lastName, birthDate)
         {
             LibraryTicketID = libraryTicketID;
             IssueDate = issueDate;
         }
 
-        public LibraryUser(string firstName, string lastName, DateTime birthDate, uint libraryTicketID, DateTime issueDate, double libraryFee) 
+        public LibraryUser(string firstName, string lastName, DateTime birthDate, uint libraryTicketID, DateTime issueDate, double libraryFee)
             : this(firstName, lastName, birthDate, libraryTicketID, issueDate)
         {
             LibraryFee = libraryFee;
@@ -31,7 +36,7 @@ namespace SanaCSharp06_ClassLibrary
 
             Console.WriteLine($"Library ticket ID: #{LibraryTicketID}");
             Console.WriteLine($"Ticket issue date: {IssueDate.ToShortDateString()}");
-            Console.WriteLine($"Monthly library fee: {((LibraryFee != default) ? LibraryFee + " UAH" : "unknown")}");
+            Console.WriteLine($"Monthly library fee: {_libraryFee}");
         }
     }
 }
