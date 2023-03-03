@@ -8,16 +8,32 @@ namespace SanaCSharp06
 {
     public class Applicant : Person
     {
-        protected int ExamZnoPoints;
-        protected int AverageAtestat;
-        protected string SchoolName;
+        protected string schoolName;
+        public int ExamZnoPoints { get; set; }
+        public double AverageAtestat { get; set; }
+        public string SchoolName
+        {
+            get { return schoolName; }
+            set { if (schoolName != "") schoolName = value; }
+        }
         public Applicant(string firstName, string lastName, string birthDate,
-            int examZnoPoints, int averageAtestat, 
+            int examZnoPoints, double averageAtestat, 
             string schoolName) : base(firstName, lastName, birthDate) 
         {
             ExamZnoPoints = examZnoPoints;
             AverageAtestat = averageAtestat;
             SchoolName = schoolName;
+        }
+        public Applicant(string firstName, string lastName, string birthDate,
+            int examZnoPoints, double averageAtestat) : base(firstName, lastName, birthDate)
+        {
+            ExamZnoPoints = examZnoPoints;
+            AverageAtestat = averageAtestat;
+        }
+        public override string GetFullInfo()
+        {
+            return $"\n{FirstName} {LastName} ({BirthDate}) Atestat: {AverageAtestat}, " +
+                $"ZNO: {ExamZnoPoints} in {SchoolName}";
         }
     }
 }
