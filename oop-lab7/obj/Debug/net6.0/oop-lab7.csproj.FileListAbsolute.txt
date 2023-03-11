@@ -1,0 +1,12 @@
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.csproj.AssemblyReference.cache
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.GeneratedMSBuildEditorConfig.editorconfig
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.AssemblyInfoInputs.cache
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.AssemblyInfo.cs
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.csproj.CoreCompileInputs.cache
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\bin\Debug\net6.0\oop-lab7.deps.json
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\bin\Debug\net6.0\oop-lab7.dll
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\bin\Debug\net6.0\ref\oop-lab7.dll
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\bin\Debug\net6.0\oop-lab7.pdb
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.dll
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\ref\oop-lab7.dll
+F:\labs_oop\oop-lab7\oop-lab7Library\oop-lab7\obj\Debug\net6.0\oop-lab7.pdb

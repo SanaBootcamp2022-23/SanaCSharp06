@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dbbfb455-4a46-4907-b58f-29ffbb07f2ac": {
+      "ProjectGuid": "dbbfb455-4a46-4907-b58f-29ffbb07f2ac",
+      "DisplayName": "Library",
+      "ColorIndex": 0
+    },
+    "9dd0f212-f1f1-489b-b59c-0135635eda14": {
+      "ProjectGuid": "9dd0f212-f1f1-489b-b59c-0135635eda14",
+      "DisplayName": "Console1",
+      "ColorIndex": 1
+    },
+    "37e6501e-b117-448e-babc-079c0f8cc480": {
+      "ProjectGuid": "37e6501e-b117-448e-babc-079c0f8cc480",
+      "DisplayName": "WF",
+      "ColorIndex": 2
+    },
+    "71359b8e-67d9-4b09-ad04-8ad45fba6fba": {
+      "ProjectGuid": "71359b8e-67d9-4b09-ad04-8ad45fba6fba",
+      "DisplayName": "ClassLibrary1",
+      "ColorIndex": 3
+    },
+    "7a912265-17f7-426b-ab97-ca35aa2cc37b": {
+      "ProjectGuid": "7a912265-17f7-426b-ab97-ca35aa2cc37b",
+      "DisplayName": "ClassLibrary2",
+      "ColorIndex": 4
+    },
+    "eea09f42-cfe4-4298-83b0-c3ce9d4951a4": {
+      "ProjectGuid": "eea09f42-cfe4-4298-83b0-c3ce9d4951a4",
+      "DisplayName": "ClassLibraryWF",
+      "ColorIndex": 5
+    },
+    "5a282125-0e69-4f56-a6ec-27fa20b849a5": {
+      "ProjectGuid": "5a282125-0e69-4f56-a6ec-27fa20b849a5",
+      "DisplayName": "Library2",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "89aeb223-accd-4db9-b011-fc9075861915": {
+      "ProjectGuid": "89aeb223-accd-4db9-b011-fc9075861915",
+      "DisplayName": "WindowsFormsApp1",
+      "ColorIndex": 7
+    }
+  },
+  "NextColorIndex": 8
+}
