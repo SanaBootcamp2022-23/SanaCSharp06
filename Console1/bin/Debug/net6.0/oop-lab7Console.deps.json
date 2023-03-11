@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "oop-lab7Console/1.0.0": {
+        "dependencies": {
+          "oop-lab7": "1.0.0"
+        },
+        "runtime": {
+          "oop-lab7Console.dll": {}
+        }
+      },
+      "oop-lab7/1.0.0": {
+        "runtime": {
+          "oop-lab7.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "oop-lab7Console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "oop-lab7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
